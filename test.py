@@ -1,6 +1,5 @@
 import streamlit as st  
 import numpy as np  
-
 import math as m
 import cv2
 import matplotlib.pyplot as plt
@@ -9,7 +8,6 @@ import sys
 import random 
 import pandas as pd
 os.system('cls')
-
 
 col1, col2 = st.columns([1,2])
 with col1:
