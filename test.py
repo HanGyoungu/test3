@@ -1,5 +1,6 @@
 import streamlit as st  
 import numpy as np  
+import turtle
 import math as m
 import cv2
 import matplotlib.pyplot as plt
@@ -8,6 +9,7 @@ import sys
 import random 
 import pandas as pd
 os.system('cls')
+
 
 col1, col2 = st.columns([1,2])
 with col1:
@@ -35,27 +37,27 @@ with col[3]:
 
 
 
-# sys.exit()
-# fig, ax = plt.subplots()
+sys.exit()
+fig, ax = plt.subplots()
 
-# x = []
-# y = []
-# for i in range(-10, 11, 1): 
-#     x.append(i)
-#     y.append(3*i**3 - 5*i**2 + 3*i - 7)
+x = []
+y = []
+for i in range(-10, 11, 1): 
+    x.append(i)
+    y.append(3*i**3 - 5*i**2 + 3*i - 7)
 
-# col1,col2,col3 = st.columns(3)
+col1,col2,col3 = st.columns(3)
 
-# with col1:
-#     cc = st.radio('선의 색을 선택하시오.', ['red', 'green', 'blue', 'orange', 'm','c'])
-# with col2:
-#     ma =  st.radio('마커의 형태를 선택하시오.', ['x','^', 'o', 's','p','h','*'])
-# with col3:
-#     ls =  st.radio('선의 형태를 선택하시오.', [':', '--', '-', '-.'])
-# plt.plot(x,y, color = cc, marker = ma, linestyle = ls)
+with col1:
+    cc = st.radio('선의 색을 선택하시오.', ['red', 'green', 'blue', 'orange', 'm','c'])
+with col2:
+    ma =  st.radio('마커의 형태를 선택하시오.', ['x','^', 'o', 's','p','h','*'])
+with col3:
+    ls =  st.radio('선의 형태를 선택하시오.', [':', '--', '-', '-.'])
+plt.plot(x,y, color = cc, marker = ma, linestyle = ls)
 
-# # plt.plot(x,y, ':cx')
-# st.pyplot(fig)
+# plt.plot(x,y, ':cx')
+st.pyplot(fig)
 
 
 
@@ -136,8 +138,8 @@ with col[3]:
 
 
 
-# sys.exit()
-# st.write('Hello, *World!* :sunglasses:')
+sys.exit()
+st.write('Hello, *World!* :sunglasses:')
 
 '# Hello, *World!* **tt** ***cc***  :red[red] :green[green] :blue[blue]💮💤'
 '## Hello, *World!* **tt** ***cc***  :red[red] :green[green] :blue[blue]💮💤'
@@ -146,19 +148,19 @@ with col[3]:
 '##### Hello, *World!* **tt** ***cc***  :red[red] :green[green] :blue[blue]💮💤'
 '###### Hello, *World!* **tt** ***cc***  :red[red] :green[green] :blue[blue]💮💤'
 
-# st.markdown("*Streamlit* is **really** ***cool***.")
-# st.markdown('''
-#     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
-#     :gray[pretty] :rainbow[colors].''')
-# st.markdown("Here's a bouquet &mdash;\
-#             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+st.markdown("*Streamlit* is **really** ***cool***.")
+st.markdown('''
+    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
+    :gray[pretty] :rainbow[colors].''')
+st.markdown("Here's a bouquet &mdash;\
+            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 
-# multi = '''If you end a line with two spaces,
-# a soft return is used for the next line.
+multi = '''If you end a line with two spaces,
+a soft return is used for the next line.
 
-# Two (or more) newline characters in a row will result in a hard return.
-# '''
-# st.markdown(multi)
+Two (or more) newline characters in a row will result in a hard return.
+'''
+st.markdown(multi)
 
 
 
@@ -172,25 +174,25 @@ with col[3]:
 
 
 
-# list1 = list([['한빛','남자','20','180'], ['한결','남자','21','177'], ['김한결','중성','51','167'], ['한라','여자','20','160']])
-# n = np.array(list1)
-# col_names = ['이름', '성별', '나이', '키']
-# df = pd.DataFrame(list1, columns=col_names, index=['1행','2행','3행','4행'])
+list1 = list([['한빛','남자','20','180'], ['한결','남자','21','177'], ['김한결','중성','51','167'], ['한라','여자','20','160']])
+n = np.array(list1)
+col_names = ['이름', '성별', '나이', '키']
+df = pd.DataFrame(list1, columns=col_names, index=['1행','2행','3행','4행'])
 
 
-# genre = st.radio("선택하시오.", ["오름차순", "내림차순", "기타", "요약"], horizontal=True, index=2 )  
+genre = st.radio("선택하시오.", ["오름차순", "내림차순", "기타", "요약"], horizontal=True, index=2 )  
 
-# number = st.number_input('Insert a number', value=20, step=1)
-# df.iloc[3,2] = number
+number = st.number_input('Insert a number', value=20, step=1)
+df.iloc[3,2] = number
 
-# if '오름' in genre:
-#     st.dataframe(df.sort_values(by=['키']))
-# if '내림' in genre:
-#     st.dataframe(df.sort_values(by=['키'], ascending=False))
-# if '기타' in genre:
-#     st.dataframe(df)
-# if '요약' in genre:
-#     st.dataframe(df.describe())
+if '오름' in genre:
+    st.dataframe(df.sort_values(by=['키']))
+if '내림' in genre:
+    st.dataframe(df.sort_values(by=['키'], ascending=False))
+if '기타' in genre:
+    st.dataframe(df)
+if '요약' in genre:
+    st.dataframe(df.describe())
 
 
 
