@@ -18,7 +18,7 @@ with col2:
     '놓치면 후회할 인재(고먐미, 시급 츄르3개)'
     '전화번호(📞):010-xxxx-xxxx'
     '이메일(💌): strustar@konyang.ac.kr'
-    '주소(🏠): 충남 논산시 대학로 121's
+    '주소(🏠): 충남 논산시 대학로 121'
 
 col= st.columns(4)
 with col[0]:
