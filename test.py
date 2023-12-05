@@ -9,7 +9,7 @@ os.system('cls')
 
 col1, col2 = st.columns([1,2])
 with col1:
-    st.image('cat.jpg', width=300)
+    st.image('cat.jpg', width=200)
 with col2:
     '놓치면 후회할 인재(고먐미, 시급 츄르3개)'
     '전화번호(📞):010-xxxx-xxxx'
