@@ -1,11 +1,8 @@
 import streamlit as st  
 import numpy as np  
-import math as m
-import cv2
 import matplotlib.pyplot as plt
 import os 
 import sys 
-import random 
 import pandas as pd
 os.system('cls')
 
