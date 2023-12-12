@@ -11,12 +11,13 @@ col1, col2 = st.columns([1,2])
 with col1:
     st.image('hg.jpg', width=200)
 with col2:
-    '놓치면 후회할 인재(한경우)'
+    '언제나 준비된 인재'
+    '이름:한경우
     '전화번호(📞):010-2784-2679'
     '이메일(💌): ruddn2679@gmail.com'
     '주소(🏠):충북 진천군 광혜원면 바들말 4길 37-6'
-
-col= st.columns(4)
+    
+col= st.sidebar.columns(4)
 with col[0]:
     st.link_button("Google(🌐)", "https://google.com")
 with col[1]:
@@ -28,8 +29,9 @@ with col[3]:
 
 ''
 ''
-'## :orange[자기 소개]'
-'#### 저는 시골에서 2남1녀의 :red[가난한 집]에서 태어나....'
+'## :black[자기 소개]'
+'#### 저는 3형제중 둘째로 태어났습니다. 
+저는 무뚝뚝하신 아버지 밑에서 자라서 인지는 몰라도 무뚝뚝한 면이 있습니다. 이러한 성격을 고치기 위해 학생 시절에 여러가지 활동을 하면서 고쳐 나갔습니다.'
 
 
 
