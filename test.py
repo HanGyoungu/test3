@@ -20,12 +20,6 @@ with col2:
 col= st.sidebar.columns(4)
 with col[0]:
     st.link_button("Google(🌐)", "https://google.com")
-with col[1]:
-    st.link_button("Naver(✅)", "https://naver.com")
-with col[2]:
-    st.link_button("Daum(💚)", "https://Daum.net")
-with col[3]:
-    st.link_button("Facebook(ⓕ)", "https://facebook.com")
 
 ''
 ''
